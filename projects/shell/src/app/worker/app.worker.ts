@@ -1,22 +1,16 @@
 /// <reference lib="webworker" />
 
-  import { HierarchicLayout } from "yfiles";
+  //import { HierarchicLayout } from "yfiles";
+  import { formatDate, getLocaleCurrencySymbol } from '@angular/common';
+import GraphWorkerUtil from './graph-util';
 
-// / import { GraphWorkerUtil } from '../util/graph-util';
-// import { encodeSearchString } from 'sharedlib';
+// import keyBy from 'lodash/keyBy';
+
+
 addEventListener('message', ({ data }) => {
-  let hlayout = new HierarchicLayout();
-// const xyz = bun.GraphWorkerUtil;
-// xyz.setLicense("qwqwqw");
-  // graphUtil.setLicense("qwqwqw");
-  // encodeSearchString();
-  // const multiPageLayout = new MultiPageLayout({
-  //   coreLayout: hlayout,
-  //   maximumPageSize: new YDimension(112, 200),
-  //   createProxyReferenceNodes: false
-  // });
-  // per.person("qwqwqw");
-  // const abc = <any>self['hlayout'];
+   const xyz = getLocaleCurrencySymbol("en");
+ // const abc = keyBy;
+ const graph = new GraphWorkerUtil();
 
   postMessage({'a': 'b'});
 });

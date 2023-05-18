@@ -1,10 +1,10 @@
- import { HierarchicLayout } from 'yfiles';
+// import { HierarchicLayout } from 'yfiles';
 
 
 export default class GraphWorkerUtil {
   constructor() {
     
- const hlayout = new HierarchicLayout();
+ //const hlayout = new HierarchicLayout();
     // const multiPageLayout = new MultiPageLayout({
     //   coreLayout: hlayout,
     //   maximumPageSize: new YDimension(112, 200),
